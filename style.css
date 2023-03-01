@@ -344,28 +344,33 @@ header .wrapper .navbar .highlight {
 footer {
   margin-top: 20px;
 }
-footer .regions .regions-list {
+footer .logo-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+}
+footer .soutien {
+  margin-bottom: 10px;
+}
+footer .soutien .regions-list {
   margin-bottom: 20px;
 }
-footer .regions .regions-list img {
+footer .soutien img {
   height: 50px;
   padding: 5px;
 }
-footer .regions .financeurs {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-footer .regions .financeurs img {
-  height: 50px;
+footer .socials img {
+  height: 30px;
   padding: 5px;
+  filter: opacity(60%);
+}
+footer .legals {
+  text-align: center;
+  font-size: 12px;
+  filter: opacity(60%);
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
