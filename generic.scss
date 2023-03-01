@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  p {
+    line-height: 18px;
+  }
+
+  h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    text-align: center;
+  }
+
+  h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  h5 {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .grid-box {
+    height: 100%;
+    width: 100%;
+    background: #efefef;
+    border-radius: 15px;
+
+    img {
+      max-width: 100%;
+      border-radius: 15px 15px 0 0;
+      object-fit: cover;
+    }
+  }
+
+  .purple-btn {
+    width: 150px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+
+
+    background: #7B119C;
+    color: white;
+  }
+
+
+  .four-col-left {
+    grid-column: 1 / 5;
+  }
+  .four-col-middle {
+    grid-column: 5 / 9;
+  }
+  .four-col-right {
+    grid-column: 9 / 13;
+  }
+}
