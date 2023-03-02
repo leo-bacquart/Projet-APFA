@@ -16,13 +16,13 @@ header .wrapper .top {
   display: flex;
   justify-content: space-between;
 }
-header .wrapper .why-afpa {
+header .wrapper .logo-afpa {
   width: 190px;
 }
-header .wrapper .why-afpa img {
+header .wrapper .logo-afpa img {
   width: 100%;
 }
-header .wrapper .carousel {
+header .wrapper .slogan {
   flex-grow: 4;
   font-family: Roboto, sans-serif;
   font-weight: bold;
@@ -371,6 +371,93 @@ footer .legals {
   font-size: 12px;
   filter: opacity(60%);
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+  }
+  header {
+    padding: 0;
+    height: 140px;
+  }
+  header .navbar {
+    overflow: hidden;
+    max-height: 0;
+  }
+  header .hamb {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    padding: 30px;
+  }
+  header .hamb-line::before,
+  header .hamb-line::after {
+    background: var(--white);
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  header .hamb-line::before {
+    top: 5px;
+  }
+  .grid-container .one {
+    grid-column: 1/13;
+    grid-row: 1;
+  }
+  .grid-container .two {
+    grid-column: 1/13;
+    grid-row: 2;
+  }
+  .grid-container .four {
+    grid-column: 1/13;
+    grid-row: 3;
+  }
+  .grid-container .five {
+    grid-column: 1/13;
+    grid-row: 4;
+  }
+  .grid-container .content-box {
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    grid-column: 1/13;
+  }
+  .grid-container .content-box .row-one {
+    grid-row: 4;
+  }
+  .grid-container .content-box .row-two {
+    grid-row: 5;
+  }
+  .grid-container .content-box .row-three {
+    grid-row: 6;
+  }
+  .grid-container .actu-title {
+    grid-column: 1/13;
+    grid-row: 8;
+  }
+  .grid-container .grid-box {
+    width: calc(100% - 20px);
+    margin: auto;
+  }
+  .grid-container .carousel {
+    height: 300px;
+  }
+  .grid-container .content-box {
+    padding: 0;
+  }
+  .grid-container .four-col-left {
+    grid-column: 1/13;
+  }
+  .grid-container .four-col-middle {
+    grid-column: 1/13;
+  }
+  .grid-container .four-col-right {
+    grid-column: 1/13;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

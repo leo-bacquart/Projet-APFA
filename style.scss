@@ -24,7 +24,7 @@ header {
       justify-content: space-between;
     }
 
-    .why-afpa {
+    .logo-afpa {
       width: 190px;
 
       img {
@@ -32,7 +32,7 @@ header {
       }
     }
 
-    .carousel {
+    .slogan {
       flex-grow: 4;
 
       font-family: Roboto, sans-serif;
@@ -521,6 +521,126 @@ footer {
     filter: opacity(60%);
     margin-bottom: 10px;
   }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+   .wrapper {
+    max-width: 768px;
+  }
+
+  //TODO Header avec navbar responsive
+  header {
+    padding: 0;
+    height: 140px;
+
+    .navbar {
+      overflow: hidden;
+      max-height: 0;
+    }
+
+
+    .hamb{
+      cursor: pointer;
+      position: relative;
+      float: right;
+      padding: 30px;
+    }
+
+    .hamb-line::before,
+    .hamb-line::after{
+      background: var(--white);
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+    .hamb-line::before{
+      top: 5px;
+    }
+
+  }
+
+  .grid-container {
+
+    .one {
+      grid-column: 1 / 13;
+      grid-row: 1;
+    }
+    .two {
+      grid-column: 1/13;
+      grid-row: 2;
+    }
+
+    .four {
+      grid-column: 1 / 13;
+      grid-row: 3;
+    }
+    .five {
+      grid-column: 1/13;
+      grid-row: 4;
+    }
+
+    .content-box {
+      align-items: center;
+
+      height: 200px;
+      width: 100%;
+
+      grid-column: 1 / 13;
+      .row-one {
+        grid-row: 4;
+      }
+      .row-two {
+        grid-row: 5;
+      }
+      .row-three {
+        grid-row: 6;
+      }
+    }
+
+    .actu-title {
+      grid-column: 1/13;
+      grid-row: 8;
+    }
+
+    .grid-box {
+      width: calc(100% - 20px);
+      margin: auto;
+    }
+
+    .carousel {
+      height: 300px;
+    }
+
+    .content-box {
+      padding: 0;
+    }
+
+    .four-col-left {
+      grid-column: 1 / 13;
+    }
+    .four-col-middle {
+      grid-column: 1 / 13;
+    }
+    .four-col-right {
+      grid-column: 1 / 13;
+    }
+
+
+
+
+
+
+
+
+  }
+
+
 
 }
 
