@@ -8,6 +8,11 @@
 
 //HEADER
 header {
+  .menu-mobile {
+    display: none;
+  }
+
+
   background: #efefef;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   position: sticky;
@@ -533,6 +538,61 @@ footer {
 
   //TODO Header avec navbar responsive
   header {
+    .menu-mobile {
+      display: block;
+      .highlight {
+        background: #7B119C;
+        color: white;
+      }
+    }
+    .menu-icon {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      margin: 10px;
+      font-size: 50px;
+      z-index: 999;
+    }
+    .menu {
+      width: calc(100% - 20px);
+      position: absolute;
+      top: 100%;
+      right: 0;
+      padding: 10px;
+      background-color: #f2f2f2;
+      list-style: none;
+      margin: 0;
+      z-index: 998;
+      display: none;
+    }
+    .menu li {
+      margin: 0;
+    }
+
+    .menu a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    #toggle-menu:checked + .menu-icon + .menu {
+      display: block;
+    }
+
+    #toggle-menu {
+      display: none;
+    }
+
+    .three {
+      margin-right: 10px;
+      .text {
+        display: none;
+      }
+    }
+
     padding: 0;
     height: 140px;
 
@@ -541,28 +601,69 @@ footer {
       max-height: 0;
     }
 
-
-    .hamb{
+    .hamburger, .close {
+      border: none;
       cursor: pointer;
-      position: relative;
-      float: right;
-      padding: 30px;
+      /* position absolute position the icons relative to the body because they have no position relative parents*/
+      display: flex;
+      justify-content: right;
     }
 
-    .hamb-line::before,
-    .hamb-line::after{
-      background: var(--white);
-      content: '';
-      display: block;
-      height: 100%;
+    .hamburger {
+      background: white;
+    }
+
+    .close {
+      background: black;
+    }
+
+    .hamburger img, .close img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .navbar {
       position: absolute;
-      transition: all .2s ease-out;
+      /* a higher z-index put navbar above hamburger */
+      z-index: 1000;
+      top: 0;
+      left: 0;
       width: 100%;
-    }
-    .hamb-line::before{
-      top: 5px;
+      height: 100vh;
+      overflow: hidden;
+      /* basic menu styling*/
+      list-style: none;
+      background: black;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      /* animate slide up/down */
+      transform: translateY(-100%);
+      transition: transform 0.2s ease;
     }
 
+    .navbar:target {
+      /* show navbar */
+      transform: translateY(0);
+    }
+
+    li a {
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      /* remove default underline and add our own with padding and border bottom */
+      text-decoration: none;
+      border-bottom: 1px solid black;
+      padding-bottom: 0.5rem;
+    }
+
+    li a:hover, li a:focus {
+      /* show border bottom */
+      border-bottom: 1px solid white;
+    }
   }
 
   .grid-container {
@@ -630,17 +731,6 @@ footer {
     .four-col-right {
       grid-column: 1 / 13;
     }
-
-
-
-
-
-
-
-
   }
-
-
-
 }
 

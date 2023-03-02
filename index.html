@@ -44,17 +44,28 @@
             <div class="three">
                 <a href="#">
                     <span class="material-symbols-rounded">account_circle</span>
-                    <span>Mon compte</span>
+                    <span class="text">Mon compte</span>
                 </a>
             </div>
         </div>
 
-        <!-- BURGER       -->
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-
         <!-- NAVBAR -->
-        <ul class="navbar">
+        <nav class="menu-mobile">
+            <input type="checkbox" id="toggle-menu">
+            <label for="toggle-menu" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="#">Particulier</a></li>
+                <li><a href="#">Partenaire</a></li>
+                <li><a href="#">Entreprise</a></li>
+                <li><a href="#" class="highlight">Nos formations</a></li>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Groupe Afpa</a></li>
+                <li><a href="#">Recherche</a></li>
+            </ul>
+        </nav>
+
+
+        <ul class="navbar" id="navbar">
             <li class="i-am"><a href="#">Particulier</a></li>
             <li class="i-am"><a href="#">Partenaire</a></li>
             <li class="i-am"><a href="#">Entreprise</a></li>
