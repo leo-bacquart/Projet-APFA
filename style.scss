@@ -108,7 +108,6 @@ header {
   }
 }
 
-
 // GRID (content)
 .grid-container {
   //DEFINING GRID
@@ -488,6 +487,7 @@ header {
   }
 }
 
+//FOOTER
 footer {
   margin-top: 20px;
   .logo-list {
@@ -529,8 +529,7 @@ footer {
 
 }
 
-
-
+//MOBILE
 @media only screen and (max-width: 768px) {
    .wrapper {
     max-width: 768px;
