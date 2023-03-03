@@ -535,7 +535,10 @@ footer {
     max-width: 768px;
   }
 
+  // HEADER
   header {
+
+    // NAVBAR (BURGER MENU)
     .menu-mobile {
       display: block;
       .highlight {
@@ -664,6 +667,7 @@ footer {
     }
   }
 
+  // CONTENT
   .grid-container {
 
     .one {
