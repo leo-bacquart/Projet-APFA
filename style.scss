@@ -108,7 +108,6 @@ header {
   }
 }
 
-
 // GRID (content)
 .grid-container {
   //DEFINING GRID
@@ -488,6 +487,7 @@ header {
   }
 }
 
+//FOOTER
 footer {
   margin-top: 20px;
   .logo-list {
@@ -529,15 +529,16 @@ footer {
 
 }
 
-
-
+//MOBILE
 @media only screen and (max-width: 768px) {
    .wrapper {
     max-width: 768px;
   }
 
-  //TODO Header avec navbar responsive
+  // HEADER
   header {
+
+    // NAVBAR (BURGER MENU)
     .menu-mobile {
       display: block;
       .highlight {
@@ -666,6 +667,7 @@ footer {
     }
   }
 
+  // CONTENT
   .grid-container {
 
     .one {
