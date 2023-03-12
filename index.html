@@ -1,119 +1,313 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>APFA - Accueil</title>
 
-    <!-- Responsive font styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-        html {
-            font-size: 16px;
-        }
-
-        @media only screen and (min-width: 768px) {
-            html {
-                font-size: 18px;
-            }
-        }
-
-        @media only screen and (min-width: 1024px) {
-            html {
-                font-size: 20px;
-            }
+        .material-symbols-rounded {
+            font-variation-settings:
+                    'FILL' 1,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 48
         }
     </style>
 
-    <!-- Responsive image styles -->
-    <style>
-        .why-afpa img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
-    <!-- Responsive layout styles -->
-    <style>
-        /* Mobile-first styles */
-        .wrapper {
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 0 16px;
-        }
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="generic.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
 
-        .top {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-        }
+<!-- HEADER -->
+<header>
 
-        .why-afpa {
-            width: 100%;
-            margin-bottom: 16px;
-        }
+    <!-- HEADER CONTENT -->
+    <div class="wrapper">
 
-        .carousel {
-            margin-bottom: 16px;
-        }
+        <!-- TOP BAR (Logo + Slogan + Connect button) -->
+        <div class="top">
+            <div class="why-afpa">
+                <img src="images/content-images/logo.png" alt="logo-afpa">
+            </div>
+            <div class="carousel">
+                <p>On a tous droit à plusieurs vies.</p>
+            </div>
+            <div class="three">
+                <a href="#">
+                    <span class="material-symbols-rounded">account_circle</span>
+                    <span>Mon compte</span>
+                </a>
+            </div>
+        </div>
 
-        .navbar {
-            display: none;
-            margin-bottom: 16px;
-        }
+        <!-- NAVBAR -->
+        <ul class="navbar">
+            <li><a href="#">Particulier</a></li>
+            <li><a href="#">Partenaire</a></li>
+            <li><a href="#">Entreprise</a></li>
+            <li class="highlight"><a href="#">Nos formations</a></li>
+            <li><a href="#">Actualités</a></li>
+            <li><a href="#">Groupe Afpa</a></li>
+            <li class="search">
+                <a href="#">
+                    <span>Recherche</span>
+                </a>
+            </li>
+        </ul>
 
-        .one {
-            margin-bottom: 16px;
-        }
+    </div>
+</header>
 
-        .two {
-            margin-bottom: 16px;
-        }
+<!-- PAGE CONTENT -->
+<div class="wrapper">
+    <div class="grid-container">
 
-        /* Styles for tablets */
-        @media only screen and (min-width: 768px) {
-            .wrapper {
-                max-width: 768px;
-            }
+        <!-- TOP LEFT PANEL (Pourquoi l'Apfa) -->
+        <div class="one">
+            <div class="grid-box why-afpa">
+                <h2>Pourquoi l'Afpa ?</h2>
+                <ul class="desc">
+                    <li>
+                        <img src="images/icons/thumb_up_FILL1_wght400_GRAD0_opsz48.svg" alt="thumb_up">
+                        <span class="text">Un apprentissage en situation réelle de travail</span>
+                    </li>
+                    <li>
+                        <img src="images/icons/group_FILL1_wght400_GRAD0_opsz48.svg" alt="group">
+                        <span class="text">Une gamme de formation pour tous les publics</span>
+                    </li>
+                    <li>
+                        <img src="images/icons/flag_FILL1_wght400_GRAD0_opsz48.svg" alt="flag">
+                        <span class="text">Une présence sur tout le territoire</span>
+                    </li>
+                    <li>
+                        <img src="images/icons/restaurant_FILL1_wght400_GRAD0_opsz48.svg" alt="restaurant">
+                        <span class="text">Une offre d'hébergement et de restauration</span>
+                    </li>
+                </ul>
 
-            .top {
-                margin-bottom: 32px;
-            }
+                <ul class="numbers">
+                    <li>
+                        <h3>84,6%</h3>
+                        <span>De réussite au titre professionnel</span>
+                    </li>
+                    <li>
+                        <h3>71%</h3>
+                        <span>D'accès à l'emploi dans les 6 mois</span>
+                    </li>
+                    <li>
+                        <h3>86%</h3>
+                        <span>De stagiaires satisfaits</span>
+                    </li>
+                    <li>
+                        <h3>900</h3>
+                        <span>Formations au catalogue</span>
+                    </li>
+                    <li>
+                        <h3>116</h3>
+                        <span>Centres de formation</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-            .why-afpa {
-                width: calc(50% - 8px);
-                margin-right: 16px;
-                margin-bottom: 0;
-            }
+        <!-- TOP RIGHT PANEL - TODO Slider -->
+        <div class="two">
+            <div class="carousel">
+                <div class="info-bar">
+                    <h3>Visite virtuelle</h3>
+                    <div class="content">
+                        <p>Vous avez toujours voulu savoir à quoi ressemblent nos plateaux de formation ? Avec nos visites virtuelles 360° HD, plongez en immersion et découvrez plus de 60 plateaux de formation.</p>
+                        <a href="#">Découvrez nos plateaux de formation</a>
+                    </div>
+                </div>
 
-            .carousel {
-                width: calc(50% - 8px);
-                margin-bottom: 0;
-            }
+                <div class="skip-btn">
+                    <img src="images/icons/arrow_forward_FILL0_wght400_GRAD0_opsz48.svg" alt="arrow-forward">
+                </div>
+            </div>
+        </div>
 
-            .navbar {
-                display: flex;
-                justify-content: center;
-            }
 
-            .one {
-                margin-bottom: 0;
-            }
+        <!--  (Nos formations en ...)       -->
+        <div class="content-box row-one top">
+            <div class="title">
+                <h1>Notre offre particuliers</h1>
+                <h4>Apprendre, se former, réfléchir à son projet, se reconvertir...</h4>
+            </div>
+            <ul class="desc">
+                <li>Formez-vous à distance</li>
+                <li>Devenez agent de restauration Buffalo Grill</li>
+                <li>Devenez technicien-vendeur chez Decathlon</li>
+                <li>Devenez assistante de vie avec Oui Care</li>
+            </ul>
+            <div class="icon"><img src="images/icons/person_FILL1_wght400_GRAD0_opsz48.svg" alt="person"></div>
 
-            .two {
-                margin-bottom: 0;
-            }
-        }
 
-        /* Styles for desktop */
-        @media only screen and (min-width: 1024px) {
-            .wrapper {
-                max-width: 1024px;
-            }
+            <a class="purple-btn discover" href="#">
+                <p>Découvrir</p>
+            </a>
+        </div>
 
-            .top {
-                margin-bottom: 48px;
-            }
+        <div class="content-box row-two">
+            <div class="title">
+                <h1>Nos formations en alternance</h1>
+                <h4>Des formations prêtes à l'emploi sur plus de 200 métiers</h4>
+            </div>
+            <div class="icon"><img src="images/icons/monitoring_FILL1_wght400_GRAD0_opsz48.svg" alt="monitoring"></div>
+            <ul class="desc">
+                <li>Nos formations prêtes à l'emploi</li>
+                <li>Trouvez votre entreprise</li>
+                <li>Se former à l'Apfa</li>
+                <li>Le choix de l'alternance</li>
+            </ul>
+            <a class="purple-btn discover" href="#">
+                <p>Découvrir</p>
+            </a>
+        </div>
+
+        <div class="content-box row-three bottom">
+            <div class="title">
+                <h1>Recrutement en alternance</h1>
+                <h4>Un accompagnement complet pour former et recruter vos alternants</h4>
+            </div>
+            <div class="icon"><img src="images/icons/groups_2_FILL1_wght400_GRAD0_opsz48.svg" alt="groups-2"></div>
+            <ul class="desc">
+                <li>L'alternance avec l'Apfa</li>
+                <li>Un recrutement encadré et maîtrisé</li>
+                <li>Un service clé en main</li>
+                <li>Une formation au tutorat</li>
+            </ul>
+            <a class="purple-btn discover" href="#">
+                <p>Découvrir</p>
+            </a>
+        </div>
+
+        <!-- FORMATION SEARCH       -->
+        <div class="four">
+            <div class="grid-box formation-search">
+                <div class="up">
+                    <h2>Rechercher une formation</h2>
+                    <p class="search-bar">Métier</p>
+                    <div class="unroll-bar">
+                        <span>Domaine</span>
+                        <img src="images/icons/expand_more_FILL1_wght400_GRAD0_opsz48.svg" alt="expand-more">
+                    </div>
+                    <div class="unroll-bar">
+                        <span>Région</span>
+                        <img src="images/icons/expand_more_FILL1_wght400_GRAD0_opsz48.svg" alt="expand-more">
+                    </div>
+                </div>
+                <div class="validate-button">
+                    <a href="#">Rechercher</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MEET US       -->
+        <div class="five">
+            <div class="grid-box meet-us">
+                <div class="title">
+                    <h2>Venez nous rencontrer</h2>
+                    <h5>Découvrez les évènements proches de chez vous.</h5>
+                </div>
+                <div class="location-bar">
+                    <img src="images/icons/near_me_FILL1_wght400_GRAD0_opsz48.svg" alt="near-me">
+                    <p>Ville ou code postal</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACTU       -->
+        <div class="actu-title">
+            <h2>Fil info</h2>
+        </div>
+        <div class="actu grid-box four-col-left">
+            <img src="images/content-images/basket.png" alt="actu-basket">
+            <div class="title">
+                <a href="#"><h3 class="content">Reconversion professionnelle : Focus sur 10 métiers qui marquent</h3></a>
+                <p class="date">04/01/2023</p>
+            </div>
+            <p class="subtitle">Vous avez envie de changer de métier ? Mais vous manquez d’inspiration ? A l'Afpa, nous avons sélectionné pour vous 10 métiers qui recrutent et qui vous font marquer des points pour votre dossier de financement formation.</p>
+        </div>
+        <div class="actu grid-box four-col-middle">
+            <img src="images/content-images/3D-print.png" alt="actu-3d">
+            <div class="title">
+                <h3 class="content">Technicien supérieur en impression 3D, un métier qui a de l'avenir</h3>
+                <p class="date">04/01/2023</p>
+            </div>
+            <p class="subtitle">Vous avez envie de vous orienter vers un métier innovant, qui touche aux nouvelles technologies industrielles ? Un métier recherché en ce moment par les entreprises ? Devenez technicien supérieur en impression 3D et entrez dans l’ère de l’industrie 4.0</p>
+
+        </div>
+        <div class="actu grid-box four-col-right">
+            <img src="images/content-images/decathlon.jpeg" alt="decathlon">
+            <div class="title">
+                <h3 class="content">Formez-vous sur le terrain au métier de technicien vendeur en matériel de sport</h3>
+                <p class="date">04/01/2023</p>
+            </div>
+            <p class="subtitle">Le sport est votre passion ? Vous souhaitez exercer un métier en lien avec cet univers ? Pourquoi ne pas devenir Technicien vendeur chez Decathlon ?</p>
+        </div>
+    </div>
+</div>
+
+<!--FOOTER-->
+<footer>
+
+
+    <div class="wrapper">
+
+
+
+        <div class="soutien">
+            <h2 class="title">Avec le soutien de </h2>
+            <div class="regions-list logo-list">
+                <img src="images/regions/auvergne-rhones-alpe.svg" alt="auvergne">
+                <img src="images/regions/bourgogne-franche-compte.svg" alt="bourgogne">
+                <img src="images/regions/bretagne.svg" alt="bretagne">
+                <img src="images/regions/centre-val-de-loire.svg" alt="centre">
+                <img src="images/regions/corse.svg" alt="corse">
+                <img src="images/regions/grand-est.svg" alt="grand-est">
+                <img src="images/regions/hauts-de-france.svg" alt="nord">
+                <img src="images/regions/ile-de-france.svg" alt="idf">
+                <img src="images/regions/normandie.svg" alt="normandie">
+                <img src="images/regions/nouvelle-aquitaine.svg" alt="nouvelle-aquitaine">
+                <img src="images/regions/occitanie.svg" alt="occitanie">
+                <img src="images/regions/paca.svg" alt="paca">
+                <img src="images/regions/pays-de-la-loire.svg" alt="pays-de-la-loire">
+            </div>
+            <div class="financeurs grid-box logo-list">
+                <img src="images/financeurs/fse.png" alt="fse">
+                <img src="images/financeurs/nextgeneu.svg" alt="nextgenEU">
+                <img src="images/financeurs/france-relance.svg" alt="france relance">
+                <img src="images/financeurs/synofdes.png" alt="synofdes">
+            </div>
+
+
+        </div>
+
+        <div class="socials logo-list">
+            <a href="#"><img src="images/socials/facebook.svg" alt=""></a>
+            <a href="#"><img src="images/socials/linkedin.svg" alt=""></a>
+            <a href="#"><img src="images/socials/twitter.svg" alt=""></a>
+            <a href="#"><img src="images/socials/youtube.svg" alt=""></a>
+        </div>
+
+        <div class="legals">
+            <p><a href="#">Fournisseurs</a> | <a href="#">CGV</a> | <a href="#">Règlement intérieur stagiaires</a> | <a href="#">Règlement
+                COVID-19</a> | <a href="#">Nous contacter</a> | <a href="#">Réclamations</a> | <a href="#">Conformité</a></p>
+            <br>
+            <p><a href="#">Liens utiles</a> | <a href="#">Plan du site</a> | <a href="#">Politique de protection des données</a> |
+                <a href="#">Cookies</a> | <a href="#">CGU</a> | <a href="#">Accessibilité</a> | <a href="#">Crédits</a> |
+                <a href="#">Mentions légales</a> | <a href="#">Espace presse</a></p>
+        </div>
 
     </div>
 </footer>
